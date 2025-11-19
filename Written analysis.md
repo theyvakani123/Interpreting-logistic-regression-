@@ -2,6 +2,23 @@
 
 ### Interpreting Learned Coefficients
 
+## Learned Coefficients and Bias
+
+After training, the logistic regression model produced the following weights and bias:
+
+- **Feature 1:** Weight = `1.6959`
+- **Feature 2:** Weight = `-0.0904`
+- **Feature 3:** Weight = `-0.0814`
+- **Bias:** `-0.2006`
+
+### Interpretation
+
+- **Feature 1** has a strong positive influence on the prediction. A higher value in this feature significantly increases the likelihood of the sample being classified as class `1`.
+- **Feature 2** and **Feature 3** have small negative weights, indicating a slight inverse relationship with the target class. Their influence is minimal compared to Feature 1.
+- The **bias term** (`-0.2006`) shifts the decision boundary slightly, adjusting the threshold at which the model predicts class `1`.
+
+These coefficients define the model's decision boundary in the 3D feature space. Since Feature 1 dominates, the model relies heavily on it to separate the classes, which aligns with the synthetic data's informative structure.
+
 After training, the logistic regression model provides a set of learned weights (coefficients) for each input feature, along with a bias term. These coefficients represent the strength and direction of each feature's influence on the predicted probability of the positive class:
 
 - **Positive Coefficient**: Indicates that as the feature value increases, the likelihood of the positive class increases.
