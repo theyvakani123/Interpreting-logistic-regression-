@@ -54,3 +54,16 @@ After training the custom logistic regression model for `1000` epochs with a lea
 
 
 ---
+## Conclusion and Summary
+
+This project successfully demonstrates the implementation of logistic regression from scratch using NumPy, applied to a synthetically generated binary classification dataset. By carefully designing the dataset with well-separated classes, the model was able to learn an effective decision boundary and achieve strong performance metrics.
+
+### Key Takeaways
+
+- Built a custom logistic regression model without relying on machine learning libraries.
+- Generated a clean, informative dataset using `sklearn.datasets.make_classification`.
+- Visualized training progress through a loss curve to confirm convergence.
+- Evaluated model performance using accuracy, precision, and recall.
+- Interpreted learned coefficients to understand feature influence and decision logic.
+
+This hands-on approach reinforces foundational concepts in supervised learning, optimization, and model evaluation, making it an excellent educational exercise for understanding how logistic regression works under the hood.
